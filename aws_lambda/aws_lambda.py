@@ -595,7 +595,7 @@ def update_function(cfg, path_to_zip_file, use_s3=False, s3_file=None):
     client.update_function_configuration(**kwargs)
 
 
-def upload_s3(cfg, path_to_zip_file, *use_s3):
+def upload_s3(cfg, path_to_zip_file, use_s3=None):
     """Upload a function to AWS S3."""
 
     print('Uploading your new Lambda function')
